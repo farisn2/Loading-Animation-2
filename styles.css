@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10%;
+
+    animation: rotate infinite 1s;
+}
+
+.squarel1{
+    background: red;
+}
+.squarel2{
+    background: orange;
+}
+.squarel3{
+    background: blue;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
